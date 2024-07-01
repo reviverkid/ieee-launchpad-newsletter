@@ -4,50 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IEEE LaunchPad Kerala Newsletter</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
             background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
             background: white;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            background: #004aad;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        header a {
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
+            margin-top: 20px;
         }
         .newsletter-title {
             color: #333;
             text-align: center;
+            font-size: 28px;
+            margin: 20px 0;
         }
         .cta {
             background: #e8491d;
             color: white;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
             margin: 20px 0;
         }
@@ -65,6 +42,7 @@
         }
         .content {
             line-height: 1.6;
+            margin-bottom: 20px;
         }
         .event-roadmap {
             margin: 20px 0;
@@ -76,35 +54,59 @@
             padding: 10px 0;
             margin-top: 20px;
         }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#" class="brand-logo center">IEEE LaunchPad Kerala</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#cta">Join Us</a></li>
+                <li><a href="#latest-updates">Latest Updates</a></li>
+                <li><a href="#event-roadmap">Event Roadmap</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <header>
-            <div class="container">
-                <h1>IEEE LaunchPad Kerala</h1>
-            </div>
-        </header>
-        <section>
+        <!-- Introduction Section -->
+        <section id="introduction">
             <h2 class="newsletter-title">Welcome to the IEEE LaunchPad Kerala Newsletter!</h2>
             <p class="content">IEEE LaunchPad Kerala is dedicated to fostering innovation and collaboration among tech enthusiasts in Kerala. Our mission is to provide a platform for budding engineers, entrepreneurs, and tech professionals to come together, share ideas, and drive technological advancements.</p>
         </section>
-        <section class="cta">
+
+        <!-- Call to Action Section -->
+        <section id="cta" class="cta">
             <p>Join us today and be a part of the technological revolution!</p>
-            <a href="https://www.ieeekerala.org">Become a Member</a>
+            <a href="https://www.ieeekerala.org" class="btn white black-text">Become a Member</a>
         </section>
-        <section>
+
+        <!-- Latest Updates Section -->
+        <section id="latest-updates">
             <h3 class="section-title">Latest Updates</h3>
             <p class="content">We are thrilled to announce that our recent event, Tech Innovators Summit 2024, was a massive success with over 500 participants and 20 keynote speakers. The event highlighted groundbreaking innovations and provided a platform for networking and knowledge sharing.</p>
         </section>
-        <section class="event-roadmap">
+
+        <!-- Event Roadmap Section -->
+        <section id="event-roadmap" class="event-roadmap">
             <h3 class="section-title">Event Roadmap</h3>
             <p class="content">Our upcoming events include a series of hands-on workshops, webinars on emerging technologies, and our flagship event, the IEEE Kerala Tech Fest. Stay tuned for more details and mark your calendars!</p>
         </section>
+
+        <!-- Footer -->
         <footer>
             <p>&copy; 2024 IEEE LaunchPad Kerala. All Rights Reserved.</p>
             <p>Follow us on <a href="#" style="color: white;">Facebook</a>, <a href="#" style="color: white;">Twitter</a>, and <a href="#" style="color: white;">LinkedIn</a></p>
         </footer>
     </div>
+
+    <!-- Materialize JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
